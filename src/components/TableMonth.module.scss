@@ -1,0 +1,28 @@
+table {
+    width: 90%;
+}
+
+td {
+    width: 14.285714% !important;
+    position: relative;
+}
+
+td:after {
+    content: '';
+    display: block;
+    margin-top: 100%;
+}
+
+td .content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: gold;
+}
+
+td:hover {
+    background: /* top, transparent black, faked with gradient */
+    linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))
+}
